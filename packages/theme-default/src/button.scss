@@ -1,0 +1,34 @@
+@import "./mixin/mixins.scss";
+
+@include b(button) {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  background-color: $--button-default-fill;
+  padding: $--button-padding-vertical $--button-padding-horizontal;
+  font-size: $--button-font-size;
+  color: $--button-default-color;
+  border-radius: $--border-radius-base;
+  transition: 0.2s all;
+  @include m(default) {
+    &:hover,
+    &:focus {
+      color: #409eff;
+      border-color: #c6e2ff;
+      background-color: #ecf5ff;
+    }
+  }
+  @include m(primary) {
+    border-color: #409eff;
+    color: #fff;
+    background-color: #409eff;
+    &:hover,
+    &:focus {
+      color: #fff;
+      border-color: #66b1ff;
+      background-color: #66b1ff;
+    }
+  }
+}
