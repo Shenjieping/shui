@@ -7,7 +7,7 @@
     <div class="separate-panel">
       <div class="about">
         <router-link :to="{name: 'guid'}">开始使用</router-link>
-        <a target="_blank" class="btn-github" href="https://github.com/VV-UI/VV-UI">GitHub</a>
+        <a target="_blank" class="btn-github" href="https://github.com/Shenjieping/shui">GitHub</a>
       </div>
     </div>
   </div>
